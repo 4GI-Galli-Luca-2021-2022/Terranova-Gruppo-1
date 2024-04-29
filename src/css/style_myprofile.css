@@ -67,15 +67,13 @@ a.title {
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
+  margin-left: 530px;
 }
 .imgContainer img {
   width: 100px;
   background-color: white;
   border-radius: 100px;
   padding: 10px;
-}
-.userInfo {
-  margin-left: 275px;
 }
 .userText {
   display: flex;
@@ -98,7 +96,7 @@ a.title {
   margin-right: 20px;
 }
 .menuContainer {
-  width: 1400px;
+  width: 1600px;
   height: auto;
   background-color: white;
   border-radius: 30px;
@@ -118,7 +116,7 @@ a.title {
 .contractDetails {
   border-radius: 30px;
   border: 1.3px rgba(128, 128, 128, 0.542) solid;
-  width: 300px;
+  width: 500px;
   height: auto;
 }
 .contractDetails > *:not(.ButtonContainer, .arrowContainer) {
@@ -200,7 +198,7 @@ a.title {
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 30px;
+  grid-gap: 120px 30px;
   margin: 0 auto;
   margin-left: 30px;
 }
@@ -244,7 +242,7 @@ a.title {
 .calendarContainer {
   display: flex;
   flex-direction: row;
-  margin-top: 50px;
+  margin-top: 20px;
   height: 450px;
   width: calc(100% - 55px);
   border: 1.3px rgba(128, 128, 128, 0.542) solid;
@@ -309,4 +307,104 @@ a.title {
   border-radius: 12px;
   padding: 15px;
   text-align: center;
+  background-color: white;
+  cursor: pointer;
+}
+.casellaCalendarioAttiva {
+  background-color: #58e042;
+  cursor: pointer;
+}
+.newContract {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  height: 940px;
+  width: calc(100% - 55px);
+  border: 1.3px rgba(128, 128, 128, 0.542) solid;
+  border-radius: 25px;
+}
+.servicesContainer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  margin-left: 40px;
+  gap: 190px;
+}
+.servicesContainer2 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  margin-left: 40px;
+  gap: 190px;
+}
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1.3px rgba(128, 128, 128, 0.542) solid;
+  border-radius: 25px;
+  height: 270px;
+  width: 200px;
+}
+.service img {
+  width: 140px;
+  height: 50px;
+  object-fit: contain;
+}
+.service button {
+  background-color: #58e042;
+  border: none;
+  border-radius: 15px;
+  width: 100px;
+  height: 30px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.input-group {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.input-group input {
+  width: 150px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  margin-left: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+.parameterContainer form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-left: 40px;
+  gap: 200px;
+}
+.whiteLine {
+  margin-left: 6%;
+  border-bottom: 1px solid rgb(173, 170, 170);
+  margin-top: 25px;
+  width: 1300px;
+  border-radius: 50px;
+}
+.newContract h2 {
+  margin-top: 35px;
+  text-align: center;
+}
+#start-date {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+#end-date {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.graphContainer {
 }

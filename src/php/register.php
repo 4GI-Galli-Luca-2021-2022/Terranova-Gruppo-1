@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
       />
+    <link href="https://fonts.cdnfonts.com/css/mona-sans" rel="stylesheet">
     <script src="../js/cookie.js"></script>
     <script src="../js/registration.js"></script>
   </head>
@@ -106,7 +107,7 @@
                   />
               </div>
               
-              <div class="input-group">
+              <!-- <div class="input-group">
                 <label for="codice-fiscale" style="padding-right: 20px"
                   >Codice Fiscale</label
                   >
@@ -182,7 +183,7 @@
                   style="display: none"
                   required
                   />
-              </div>
+              </div> -->
                 
             </form>
             <button

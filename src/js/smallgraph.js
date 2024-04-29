@@ -3,9 +3,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   graphContainers.forEach(function (graphContainer) {
     var canvas = document.createElement("canvas");
-    canvas.id = "myChart"; 
-    canvas.width = 550;
-    canvas.height = 350;
+    canvas.id = "myChart";
+    canvas.width = 400;
+    canvas.height = 250;
 
     graphContainer.appendChild(canvas);
 

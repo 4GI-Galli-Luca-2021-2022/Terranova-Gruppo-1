@@ -20,6 +20,10 @@
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend+Exa:wght@100..900&family=Marcellus&family=Readex+Pro:wght@160..700&family=Source+Code+Pro&display=swap" rel="stylesheet">
       <link href="https://fonts.cdnfonts.com/css/mona-sans" rel="stylesheet">
       <script src="../js/cookie.js"></script>
+      <script src="../js/myProfile.js"></script>
+      <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
       <script>
          document.addEventListener('DOMContentLoaded', function() {
            displayUserInfo();
@@ -66,6 +70,8 @@
                         <div class="ButtonContainer">
                            <button class="selectContract">Select Contract</button>
                            <button class="deleteContract">Delete Contract</button>
+                           <div class="graphContainer">
+                           </div>
                         </div>
                      </div>
                      <div class="contractInfo">
@@ -107,56 +113,116 @@
                         </div>
                      </div>
                   </div>
-                  <div class="calendarContainer">
-                     <div class="leftSide">
-                        <h1>September 2024</h1>
-                        <h2>Change Month</h2>
-                        <div class="buttonCalContainer">
-                           <button><</button>
-                           <button>></button>
-                        </div>
-                        <h1>Change Year</h1>
-                        <select name="" id="yearSelect">
-                        </select>
+                  <h2 style="margin-top:40px">Sign a new Contract</h2>
+                  <div class="newContract">
+                     <h2>Dati Intestatario</h2>
+                     <div class="parameterContainer">
+                        <form action="newContract.php">
+                           <div class="input-group">
+                              <label for="nomeIntestatario">Nome Intestatario</label>
+                              <input type="text" class="input-group" name="nomeIntestatario" required>
+                           </div>
+                           <div class="input-group">
+                              <label for="cognomeIntestatario">Cognome Intestatario</label>
+                              <input type="text" class="input-group" name="cognomeIntestatario" required>
+                           </div>
+                           <div class="input-group">
+                              <label for="codiceFiscale">Codice Fiscale</label>
+                              <input type="text" class="input-group" name="codiceFiscale" required>
+                           </div>
+                           <div class="input-group">
+                              <label for="start-date">Start Date:</label>
+                              <input type="text" id="start-date" name="start-date" placeholder="Select Date" required>
+
+                              <label for="end-date">End Date:</label>
+                              <input type="text" id="end-date" name="end-date" placeholder="Select Date" required>
+                              <input type="hidden" name="nomeContratto" id="nome-contratto" value="">
+                           </div>
+                        </form>
                      </div>
-                     <div class="daysContainer">
-                        <div class="rightSide"> 
+                     <div class="whiteLine"></div>
+                     <div class="servicesContainer">
+                        <div class="service">
+                           <h4>Base Agsm</h4>
+                           <img src="../../img/agsm.png" alt="">
+                           <p style="margin-top:20px">Cost per min: <b>0.60£</b></p>
+                           <p><b>Type:</b> Gas & Energy</p>
+                           <button class="sign-button">Sign</button>
+                           <div class="calendar-container"></div>
+                        </div>
+                        <div class="service">
+                           <h4>Base Eni</h4>
+                           <img src="../../img/eni.svg" alt="">
+                           <p style="margin-top:20px">Cost per min: <b>0.60£</b></p>
+                           <p><b>Type:</b> Gas & Energy</p>
+                           <button class="sign-button">Sign</button>
+                        </div>
+                        <div class="service">
+                           <h4>Base Engie</h4>
+                           <img src="../../img/engie.svg" alt="">
+                           <p style="margin-top:20px">Cost per min: <b>0.60£</b></p>
+                           <p><b>Type:</b> Gas & Energy</p>
+                           <button class="sign-button">Sign</button>
+                        </div>
+                        <div class="service">
+                           <h4>Base Iren</h4><br>
+                           <img src="../../img/iren.png" style="width:70px; height:45px">
+                           <p style="margin-top:20px">Cost per min: <b>0.60£</b></p>
+                           <p><b>Type:</b> Gas & Energy</p>
+                           <button class="sign-button">Sign</button>
+                        </div>
+                     </div>
+                     <div class="servicesContainer2">
+                     <div class="service">
+                           <h4>Advanced Agsm</h4>
+                           <img src="../../img/agsm.png" alt="">
+                           <p style="margin-top:20px">Cost per min: <b>0.60£</b></p>
+                           <p><b>Type:</b> Gas & Energy</p>
+                           <button class="sign-button">Sign</button>
+                        </div>
+                        <div class="service">
+                           <h4>Advanced Eni</h4>
+                           <img src="../../img/eni.svg" alt="">
+                           <p style="margin-top:20px">Cost per min: <b>0.60£</b></p>
+                           <p><b>Type:</b> Gas & Energy</p>
+                           <button class="sign-button">Sign</button>
+                        </div>
+                        <div class="service">
+                           <h4>Advanced Engie</h4>
+                           <img src="../../img/engie.svg" alt="">
+                           <p style="margin-top:20px">Cost per min: <b>0.60£</b></p>
+                           <p><b>Type:</b> Gas & Energy</p>
+                           <button class="sign-button">Sign</button>
+                        </div>
+                        <div class="service">
+                           <h4>Advanced Iren</h4>
+                           <img src="../../img/iren.png" style="width:70px; height:45px">
+                           <p style="margin-top:20px">Cost per min: <b>0.60£</b></p>
+                           <p><b>Type:</b> Gas & Energy</p>
+                           <button class="sign-button">Sign</button>
                         </div>
                      </div>
                   </div>
                </div>
             </div>
          </div>
+
+         <script>
+            $(function() {
+               $("#start-date").datepicker({
+                  dateFormat: 'yy-mm-dd',
+                  onSelect: function(selectedDate) {
+                  $("#end-date").datepicker("option", "minDate", selectedDate);
+                  }
+               });
+               $("#end-date").datepicker({
+                  dateFormat: 'yy-mm-dd',
+                  onSelect: function(selectedDate) {
+                  $("#start-date").datepicker("option", "maxDate", selectedDate);
+                  }
+               });
+            });
+         </script>
       </div>
    </body>
-   <script>
-      const selectElement = document.getElementById("yearSelect");
-      for (let year = 2024; year <= 2080; year++) {
-         const option = document.createElement("option");
-         option.value = year;
-         option.textContent = year;
-         selectElement.appendChild(option);
-      }
-   </script>
-   <script>
-      const rightSide = document.querySelector(".rightSide");
-      // Array of days of the week
-      const daysOfWeek = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
-
-      // Create divs for days of the week
-      for (let day of daysOfWeek) {
-         const dayElement = document.createElement("div");
-         dayElement.classList.add("casellaCalendario", "dayOfWeek");
-         dayElement.textContent = day;
-         rightSide.appendChild(dayElement);
-      }
-
-      // Create divs for numbers 1 to 30
-      for (let i = 1; i <= 30; i++) {
-         const gridItem = document.createElement("div");
-         gridItem.classList.add("casellaCalendario");
-         gridItem.textContent = i;
-         rightSide.appendChild(gridItem);
-      }
-   </script>
 </html>

@@ -9,14 +9,6 @@ window.onload = function () {
     select.setAttribute("onclick", "createAlertMessage(this)");
   });
   insertNations();
-  document.getElementById("codice-fiscale").style.display = "none";
-  document.getElementById("civico").style.display = "none";
-  document.getElementById("cap").style.display = "none";
-  document.getElementById("localita").style.display = "none";
-  document.getElementById("provincia").style.display = "none";
-  document.getElementById("nazione").style.display = "none";
-  document.getElementById("numero-telefonico").style.display = "none";
-  document.getElementById("indirizzo").style.display = "none";
 
   // Seleziona tutti gli elementi label nella pagina
   var labels = document.querySelectorAll("label");
