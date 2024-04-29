@@ -83,6 +83,16 @@ a.title {
   font-weight: bold;
   margin-right: 50px;
 }
+.userText button {
+  border: none;
+  cursor: pointer;
+  background-color: #58e042;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 20px;
+  height: 40px;
+  width: 100px;
+}
 .flagtext {
   display: flex;
   flex-direction: row;
@@ -318,7 +328,7 @@ a.title {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
-  height: 940px;
+  height: 990px;
   width: calc(100% - 55px);
   border: 1.3px rgba(128, 128, 128, 0.542) solid;
   border-radius: 25px;

@@ -1,11 +1,11 @@
 body {
-  font-family: "Mona Sans";
-  background-color: #f2f2f2;
+  font-family: "Mona-Sans";
+  background-color: #1c1c1c;
   margin: 0 auto;
   height: 100vh;
 }
 body * {
-  font-family: "Mona Sans";
+  font-family: "Mona-Sans";
   scroll-behavior: smooth;
 }
 .navBarContainer {
@@ -13,6 +13,12 @@ body * {
   justify-content: center;
   align-items: center;
   margin-top: 15px;
+}
+a {
+  color: white !important;
+}
+.navBarContainer {
+  margin-right: 250px;
 }
 .avviso {
   font-size: 12px;
@@ -36,6 +42,7 @@ body * {
   flex-direction: column;
   align-items: flex-start;
   margin-left: 30px;
+  color: white;
 }
 .descrizioneSito {
   box-shadow: rgba(100, 100, 111, 0.25) 0px 7px 29px 0px;
@@ -47,8 +54,12 @@ body * {
   justify-content: center;
   align-items: flex-start;
 }
+.testo h2 {
+  color: white;
+}
 .testo p {
   padding-bottom: 5px;
+  color: white;
 }
 .title {
   text-align: center;
@@ -73,7 +84,7 @@ body * {
   display: flex;
   flex-direction: column;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  background-color: #1c1c1c;
   height: 100vh;
 }
 .form-container {
@@ -170,8 +181,9 @@ h2 {
 }
 
 .btn-login {
-  background-color: #000000;
-  color: #fff;
+  background-color: #58e042;
+  color: black;
+  font-weight: 800;
   border: none;
   padding: 12px 20px;
   border-radius: 15px;
@@ -262,6 +274,7 @@ select * {
 }
 .whatudo > p {
   font-weight: 500;
+  color: #fff;
 }
 .whatudo > img {
   padding-right: 20px;

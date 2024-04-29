@@ -25,7 +25,7 @@
         />
       <div class="full-login-container">
         <div class="topnav">
-          <?php require('./components/headerUs.php');?>
+          <?php require('./components/headerLoggedProfile.php');?>
         </div>
         <div class="login-container">
           <div class="descrizioneSito">
@@ -39,17 +39,6 @@
             </div>
             <?php require('./components/whatCanYouDo.php');?>
           </div>
-          <!-- <label for="azienda" style="margin-top: 15px"
-            ><b>Sei un'azienda?</b></label
-            > -->
-          <!-- <input
-            type="checkbox"
-            name="azienda"
-            id="check"
-            onclick="createCompanyInputs()"
-            style="margin-bottom: 30px"
-            /> -->
-          <script src="../js/registration.js"></script>
           <div class="form-container">
             <form
               id="login-form"
@@ -87,6 +76,14 @@
                   />
               </div>
               <div class="input-group">
+                <label for="provincia" style="padding-right: 20px">Provincia</label>
+                <input type="text" id="provincia" name="provincia" placeholder="Roma" required />
+              </div>
+              <div class="input-group">
+                <label id="labelnazione" style="padding-right: 20px">Nazione</label>
+                <select id="nazione" name="nazione" style="width:270px"></select>
+              </div>
+              <div class="input-group">
                 <label for="password">Password *</label>
                 <input
                   placeholder="Crea Password"
@@ -106,94 +103,15 @@
                   required
                   />
               </div>
-              
-              <!-- <div class="input-group">
-                <label for="codice-fiscale" style="padding-right: 20px"
-                  >Codice Fiscale</label
-                  >
-                <input
-                  type="text"
-                  id="codice-fiscale"
-                  name="codice-fiscale"
-                  maxlength="16"
-                  required
-                  />
-              </div>
-              <div class="input-group">
-                <label for="indirizzo" style="padding-right: 20px">Indirizzo</label>
-                <input type="text" id="indirizzo" name="indirizzo" required />
-              </div>
-              <div class="input-group">
-                <label for="civico" style="padding-right: 20px">Civico</label>
-                <input type="text" id="civico" name="civico" required />
-              </div>
-              <div class="input-group">
-                <label for="cap" style="padding-right: 20px">CAP</label>
-                <input type="text" id="cap" name="cap" required />
-              </div>
-              <div class="input-group">
-                <label for="localita" style="padding-right: 20px">Località</label>
-                <input type="text" id="localita" name="localita" required />
-              </div>
-              <div class="input-group">
-                <label for="provincia" style="padding-right: 20px">Provincia</label>
-                <input type="text" id="provincia" name="provincia" required />
-              </div>
-              <div class="input-group">
-                <label id="labelnazione" style="padding-right: 20px">Nazione</label>
-                <select id="nazione" name="nazione"></select>
-              </div>
-              <div class="input-group">
-                <label for="numero-telefonico" style="padding-right: 20px"
-                  >Numero Telefonico</label
-                  >
-                <input
-                  type="text"
-                  id="numero-telefonico"
-                  name="numero-telefonico"
-                  required
-                  />
-              </div>
-              <div class="input-group">
-                <label
-                  id="labelIva"
-                  for="partita-iva"
-                  style="display: none; padding-right: 20px"
-                  >Partita IVA</label
-                  >
-                <input
-                  type="text"
-                  id="partita-iva"
-                  name="partita-iva"
-                  style="display: none"
-                  required
-                  />
-              </div>
-              <div class="input-group">
-                <label
-                  for="ragione-sociale"
-                  id="labelRagione"
-                  style="display: none; padding-right: 20px"
-                  >Ragione Sociale</label
-                  >
-                <input
-                  type="text"
-                  id="ragione-sociale"
-                  name="ragione-sociale"
-                  style="display: none"
-                  required
-                  />
-              </div> -->
-                
-            </form>
-            <button
+              <button
               onclick="nextStep()"
               type="submit"
               id="submitButton"
               class="btn-login"
               >
-            Continua →
+            Registrati →
             </button>
+            </form>     
           </div>
         </div>
       </div>

@@ -1,6 +1,9 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
+  background-image: url("../../img/sfondo\ login.jpg"); /* Imposta il percorso dell'immagine */
+  background-size: cover; /* Imposta la dimensione dell'immagine in modo che copra l'intero corpo */
+  background-position: center; /* Imposta la posizione dell'immagine al centro del corpo */
+  /* Aggiungi altre proprietà CSS necessarie, come colore del testo, margini, padding, ecc. */
   margin: 0;
   display: flex;
   justify-content: center;

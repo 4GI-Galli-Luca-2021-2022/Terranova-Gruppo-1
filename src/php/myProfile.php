@@ -49,6 +49,7 @@
                         <img src="../../img/italy.png" alt="">
                         <p id="userLocation"><span id="city">Verona, </span> <span id="country">Italia</span></p>
                      </div>
+                     <button onclick="clearCookie();">Logout</button>
                   </div>
                   <div class="imgContainer">
                      <img src="../../img/persone/Luca Galli.png"></img>

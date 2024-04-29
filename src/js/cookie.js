@@ -68,7 +68,6 @@ function getCookie(cname) {
   return "";
 }
 function clearCookie() {
-  alert("Proceeding to remove cookie...");
   document.cookie = "user_info=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
   window.location.href = "../php/index.php";
 }

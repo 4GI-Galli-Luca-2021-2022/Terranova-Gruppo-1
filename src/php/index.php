@@ -36,10 +36,6 @@
                   every year, we are able to deliver the best provision of gas and<br />
                   energy across the entire Italian region.
                </h3>
-               <div id="divVision">
-                  <a class="vision" href="vision.html">Explore our vision</a>
-                  <img id="external_link" src="../../img/external link.png" alt="" />
-               </div>
                <div class="collaborators">
                   <img id="eni" src="../../img/eni.svg" alt="" />
                   <img src="../../img/agsm.png" alt="" />
@@ -124,10 +120,10 @@
       <div id="div_contacts">
          <div class="contactsParagraph">
             <h1 class="title2"><span class="clear">Clear</span>Pay</h1>
-            <h2 class="contacts">Have a request? <br> Use our enquiry system to send us a message!</h2>
+            <!-- <h2 class="contacts">Have a request? <br> Use our enquiry system to send us a message!</h2> -->
          </div>
          <div class="enquiryandteam">
-            <form action="" class="enquiryForm">
+            <!-- <form action="sendEnquiry.php" class="enquiryForm">
                <div class="firstEnquiry">
                   <label for="nomeE">Name *</label>
                   <input type="text" name="nomeE"></input>
@@ -137,12 +133,13 @@
                   <input type="text" name="emailE"></input>
                   <label for="emailE">Phone Number*</label>
                   <input type="text" name="emailE"></input>
+                  <button type="submit"> Send </button>
                </div>
                <div class="secondEnquiry">
                   <label for="textE">Message *</label>
                   <textarea name="messageE" maxlength="500" rows="5" cols="50"></textarea>
                </div>
-            </form>
+            </form> -->
             <div class="teamContainer">
                <h2>Our Team</h2>
                <div class="team">
@@ -200,26 +197,3 @@
       </footer>
    </body>
 </html>
-<!--
-   <h1 id="example">Example Of A Graphic</h1>
-   <div class="green-line2"></div>
-   <div id="plot-container"></div>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/1.0.2/chartjs-plugin-annotation.min.js"></script>
-   
-   <canvas id="myChart" width="950" height="450"></canvas>
-   <script src="../js/graph.js"></script>
-   
-   
-   <p id="provision">
-             Introducing <b>"CarbonCalc":</b>
-             Our company offers a <br> personalized
-             carbon footprint assessment, empowering <br> individuals to track and reduce their environmental impact<br>
-             effectively through intuitive
-             graphics.
-           </p>
-   
-   <a href="us.php" id="who">Who we are, a brief introduction</a> <img id="external_link2" src="../../img/arrow.png" alt="" />
-   
-       <div class="separator3"></div>
-   -->
