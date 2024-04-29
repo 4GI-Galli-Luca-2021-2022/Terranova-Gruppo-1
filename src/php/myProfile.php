@@ -116,15 +116,15 @@
                   </div>
                   <h2 style="margin-top:40px">Sign a new Contract</h2>
                   <div class="newContract">
-                     <h2>Dati Intestatario</h2>
+                     <h2>Owner data</h2>
                      <div class="parameterContainer">
                         <form action="newContract.php">
                            <div class="input-group">
-                              <label for="nomeIntestatario">Nome Intestatario</label>
+                              <label for="nomeIntestatario">Owner Name</label>
                               <input type="text" class="input-group" name="nomeIntestatario" required>
                            </div>
                            <div class="input-group">
-                              <label for="cognomeIntestatario">Cognome Intestatario</label>
+                              <label for="cognomeIntestatario">Owner Surname</label>
                               <input type="text" class="input-group" name="cognomeIntestatario" required>
                            </div>
                            <div class="input-group">

@@ -6,7 +6,7 @@
         <img src="../../img/twitter.png" alt="" width="30px" />
         <img src="../../img/linkedin.png" alt="" width="30px" />
       </div>
-      <li><a href="us.php">About</a></li>
+      <li><a href="#">About</a></li>
       <li><a href="">Our Services</a></li>
       <li><a href="">Partners</a></li>
       <!-- inserire IF ELSE -->

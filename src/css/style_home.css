@@ -25,7 +25,9 @@ body * {
   color: white;
   height: 40px;
 }
-
+.social_bar {
+  margin-right: 150px;
+}
 #div_contacts {
   display: flex;
   flex-direction: column;
