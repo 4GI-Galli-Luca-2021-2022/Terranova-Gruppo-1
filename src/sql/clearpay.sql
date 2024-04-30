@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 29, 2024 at 05:59 PM
+-- Generation Time: Apr 30, 2024 at 07:18 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -29,7 +29,6 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `contratto` (
   `id` int(11) NOT NULL,
-  `utente_id` int(11) NOT NULL,
   `data_inizio` date NOT NULL,
   `data_fine` date DEFAULT NULL,
   `nome_intestatario` varchar(255) NOT NULL,
@@ -37,6 +36,15 @@ CREATE TABLE `contratto` (
   `codice_fiscale` varchar(16) NOT NULL,
   `nome` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `contratto`
+--
+
+INSERT INTO `contratto` (`id`, `data_inizio`, `data_fine`, `nome_intestatario`, `cognome_intestatario`, `codice_fiscale`, `nome`) VALUES
+(3, '2024-04-01', '2024-04-04', 'Luca', 'Galli', 'GLLLCU05P30L781L', ''),
+(4, '2024-06-05', '2024-11-22', 'Francesco', 'Rossi', 'GLLLCAOUGSDI', ''),
+(5, '2024-04-09', '2024-04-19', 'Luca', 'Rossi', 'asdasdsadsad', 'Base Eni');
 
 -- --------------------------------------------------------
 
@@ -48,16 +56,8 @@ CREATE TABLE `utenti` (
   `id` int(11) NOT NULL,
   `nome` varchar(255) NOT NULL,
   `cognome` varchar(255) NOT NULL,
-  `ragione_sociale` varchar(255) NOT NULL,
-  `partita_iva` varchar(255) NOT NULL,
-  `codice_fiscale` varchar(16) NOT NULL,
-  `indirizzo` varchar(255) NOT NULL,
-  `civico` varchar(50) NOT NULL,
-  `cap` varchar(10) NOT NULL,
-  `localita` varchar(255) NOT NULL,
   `provincia` varchar(100) NOT NULL,
   `nazione` varchar(100) NOT NULL,
-  `numero_telefonico` varchar(20) NOT NULL,
   `email` varchar(255) NOT NULL,
   `password_hash` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -66,8 +66,9 @@ CREATE TABLE `utenti` (
 -- Dumping data for table `utenti`
 --
 
-INSERT INTO `utenti` (`id`, `nome`, `cognome`, `ragione_sociale`, `partita_iva`, `codice_fiscale`, `indirizzo`, `civico`, `cap`, `localita`, `provincia`, `nazione`, `numero_telefonico`, `email`, `password_hash`) VALUES
-(3, 'NomeCasuale', 'CognomeCasuale', 'RagioneSocialeCasuale', '12345678901', 'ABCDE12345F123A', 'IndirizzoCasuale', '123', '12345', 'LocalitaCasuale', 'ProvinciaCasuale', 'NazioneCasuale', '1234567890', 'emailcasuale@example.com', 'hashpasswordcasuale');
+INSERT INTO `utenti` (`id`, `nome`, `cognome`, `provincia`, `nazione`, `email`, `password_hash`) VALUES
+(3, 'NomeCasuale', 'CognomeCasuale', 'ProvinciaCasuale', 'NazioneCasuale', 'emailcasuale@example.com', 'hashpasswordcasuale'),
+(4, 'Luca', 'Galli', 'Ver', 'Benin', 'lucagalli05@gmail.com', '$2y$10$xwCCX/vm24vCxdPmfyym3O3l5Th02DmXTN.0MpIhn7KEwHAASQi12');
 
 --
 -- Indexes for dumped tables
@@ -77,8 +78,7 @@ INSERT INTO `utenti` (`id`, `nome`, `cognome`, `ragione_sociale`, `partita_iva`,
 -- Indexes for table `contratto`
 --
 ALTER TABLE `contratto`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `utente_id` (`utente_id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `utenti`
@@ -94,23 +94,13 @@ ALTER TABLE `utenti`
 -- AUTO_INCREMENT for table `contratto`
 --
 ALTER TABLE `contratto`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `utenti`
 --
 ALTER TABLE `utenti`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
---
--- Constraints for dumped tables
---
-
---
--- Constraints for table `contratto`
---
-ALTER TABLE `contratto`
-  ADD CONSTRAINT `contratto_ibfk_1` FOREIGN KEY (`utente_id`) REFERENCES `utenti` (`id`);
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 29, 2024 at 05:58 PM
+-- Generation Time: Apr 30, 2024 at 07:18 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -31,16 +31,8 @@ CREATE TABLE `utenti` (
   `id` int(11) NOT NULL,
   `nome` varchar(255) NOT NULL,
   `cognome` varchar(255) NOT NULL,
-  `ragione_sociale` varchar(255) NOT NULL,
-  `partita_iva` varchar(255) NOT NULL,
-  `codice_fiscale` varchar(16) NOT NULL,
-  `indirizzo` varchar(255) NOT NULL,
-  `civico` varchar(50) NOT NULL,
-  `cap` varchar(10) NOT NULL,
-  `localita` varchar(255) NOT NULL,
   `provincia` varchar(100) NOT NULL,
   `nazione` varchar(100) NOT NULL,
-  `numero_telefonico` varchar(20) NOT NULL,
   `email` varchar(255) NOT NULL,
   `password_hash` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -49,8 +41,9 @@ CREATE TABLE `utenti` (
 -- Dumping data for table `utenti`
 --
 
-INSERT INTO `utenti` (`id`, `nome`, `cognome`, `ragione_sociale`, `partita_iva`, `codice_fiscale`, `indirizzo`, `civico`, `cap`, `localita`, `provincia`, `nazione`, `numero_telefonico`, `email`, `password_hash`) VALUES
-(3, 'NomeCasuale', 'CognomeCasuale', 'RagioneSocialeCasuale', '12345678901', 'ABCDE12345F123A', 'IndirizzoCasuale', '123', '12345', 'LocalitaCasuale', 'ProvinciaCasuale', 'NazioneCasuale', '1234567890', 'emailcasuale@example.com', 'hashpasswordcasuale');
+INSERT INTO `utenti` (`id`, `nome`, `cognome`, `provincia`, `nazione`, `email`, `password_hash`) VALUES
+(3, 'NomeCasuale', 'CognomeCasuale', 'ProvinciaCasuale', 'NazioneCasuale', 'emailcasuale@example.com', 'hashpasswordcasuale'),
+(4, 'Luca', 'Galli', 'Ver', 'Benin', 'lucagalli05@gmail.com', '$2y$10$xwCCX/vm24vCxdPmfyym3O3l5Th02DmXTN.0MpIhn7KEwHAASQi12');
 
 --
 -- Indexes for dumped tables
@@ -70,7 +63,7 @@ ALTER TABLE `utenti`
 -- AUTO_INCREMENT for table `utenti`
 --
 ALTER TABLE `utenti`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
